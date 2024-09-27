@@ -5,7 +5,7 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class SliderModel(
-    val urlImg: String
+    val url: String
 ):Parcelable{
     constructor(): this("")
 }

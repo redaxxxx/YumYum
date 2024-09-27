@@ -6,8 +6,8 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class CategoryModel(
     val id: Int,
-    val categoryImg: String,
-    val categoryTitle: String
+    val picUrl: String,
+    val title: String
 ): Parcelable{
     constructor(): this(0,"","")
 }

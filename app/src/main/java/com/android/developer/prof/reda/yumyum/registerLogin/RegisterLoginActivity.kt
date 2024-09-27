@@ -6,6 +6,7 @@ import androidx.databinding.DataBindingUtil
 import com.android.developer.prof.reda.yumyum.R
 import com.android.developer.prof.reda.yumyum.databinding.ActivityRegisterLoginBinding
 import dagger.hilt.android.AndroidEntryPoint
+import dagger.hilt.android.HiltAndroidApp
 
 @AndroidEntryPoint
 class RegisterLoginActivity : AppCompatActivity() {

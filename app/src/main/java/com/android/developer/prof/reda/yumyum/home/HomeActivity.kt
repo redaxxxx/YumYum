@@ -9,6 +9,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.android.developer.prof.reda.yumyum.R
 import com.android.developer.prof.reda.yumyum.databinding.ActivityHomeBinding
 import dagger.hilt.android.AndroidEntryPoint
+import dagger.hilt.android.HiltAndroidApp
 
 @AndroidEntryPoint
 class HomeActivity : AppCompatActivity() {

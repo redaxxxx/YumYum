@@ -14,10 +14,10 @@ class CategoryAdapter: ListAdapter<CategoryModel, CategoryAdapter.CategoryViewHo
     inner class CategoryViewHolder(private val binding: CategoryViewHolderBinding): ViewHolder(binding.root){
         fun bind(category: CategoryModel){
             Glide.with(itemView)
-                .load(category.categoryImg)
+                .load(category.picUrl)
                 .into(binding.catImg)
 
-            binding.catTitle.text = category.categoryTitle
+            binding.catTitle.text = category.title
         }
     }
 

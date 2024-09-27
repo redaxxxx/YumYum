@@ -1,6 +1,7 @@
 package com.android.developer.prof.reda.yumyum.di
 
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.firestore.FirebaseFirestore
 import dagger.Module
 import dagger.Provides
@@ -19,4 +20,8 @@ object AppModule {
     @Provides
     @Singleton
     fun provideFirebaseFirestore() = FirebaseFirestore.getInstance()
+
+    @Provides
+    @Singleton
+    fun provideFirebaseDatabase() = FirebaseDatabase.getInstance()
 }

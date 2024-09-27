@@ -40,7 +40,7 @@
                         android:textStyle="bold"
                         app:layout_constraintTop_toTopOf="@id/guidelineUp"
                         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
-                        android:layout_marginTop="16dp" />
+                        android:layout_marginTop="8dp" />
 
                     <TextView
                         android:id="@+id/username_explore_tv"

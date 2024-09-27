@@ -14,14 +14,14 @@ class SliderAdapter: ListAdapter<SliderModel, SliderAdapter.SliderViewHolder>(Di
     inner class SliderViewHolder(private val binding: SliderItemContainerBinding): ViewHolder(binding.root){
         fun bind(slider: SliderModel){
             Glide.with(itemView)
-                .load(slider.urlImg)
+                .load(slider.url)
                 .into(binding.sliderImage)
         }
     }
 
     companion object DiffCallback: DiffUtil.ItemCallback<SliderModel>(){
         override fun areItemsTheSame(oldItem: SliderModel, newItem: SliderModel): Boolean {
-            return oldItem.urlImg == newItem.urlImg
+            return oldItem.url == newItem.url
         }
 
         override fun areContentsTheSame(oldItem: SliderModel, newItem: SliderModel): Boolean {
